@@ -16,3 +16,9 @@
 .container-fluid {
   padding: 0 !important;
 }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
