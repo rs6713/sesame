@@ -7,10 +7,22 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Sesame</h1>
+          <img src="/logo.PNG" />
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <input
+            type="file"
+            onChange={e => {
+              var reader = new FileReader();
+              reader.readAsText(e.target.files[0], "UTF-8");
+              reader.onload = function(evt) {
+                console.log(evt.target.result);
+              };
+              reader.onerror = function(evt) {
+                console.error(evt);
+              };
+            }}
+          />
         </p>
       </div>
     );
