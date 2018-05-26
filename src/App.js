@@ -7,9 +7,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="/logo.PNG" />
+          <img alt="Sesame" src="/logo.PNG" />
         </header>
         <p className="App-intro">
+          <h1>Upload an Insurance Policy</h1>
           <input
             type="file"
             onChange={e => {
