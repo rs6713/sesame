@@ -12,6 +12,12 @@
 	color:	white;
 }
 
+.nav{
+	position:	fixed;
+	width:	100%;
+	bottom: 0;
+}
+
 .btn-group_login{
 	width:	100%;
 }
