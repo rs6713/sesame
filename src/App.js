@@ -65,9 +65,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img alt="Sesame" src="/logo.PNG" />
-        </header>
         <p className="App-intro">{this.renderContent()}</p>
       </div>
     );
