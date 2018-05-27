@@ -7,7 +7,6 @@ class Login extends Component {
         <div className="pt-form-group">
           <label className="pt-label" for="example-form-group-input-a">
             Username
-            <span className="pt-text-muted">(required)</span>
           </label>
           <div className="pt-form-content">
             <input
@@ -20,13 +19,12 @@ class Login extends Component {
             />
           </div>
         </div>
-        <div className="pt-form-group pt-intent-danger">
+        <div className="pt-form-group">
           <label className="pt-label" for="example-form-group-input-b">
             Password
-            <span className="pt-text-muted">(required)</span>
           </label>
           <div className="pt-form-content">
-            <div className="pt-input-group pt-intent-danger">
+            <div className="pt-input-group">
               <input
                 id="example-form-group-input-b"
                 className="pt-input"
