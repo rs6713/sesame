@@ -4,37 +4,45 @@ class Login extends Component {
   render() {
     return (
       <div className="App">
-        <div class="input-group_login">
-          <input
-            type="text"
-            class="form-control login"
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
+        <div className="pt-form-group">
+          <label className="pt-label" for="example-form-group-input-a">
+            Username
+            <span className="pt-text-muted">(required)</span>
+          </label>
+          <div className="pt-form-content">
+            <input
+              id="example-form-group-input-a"
+              className="pt-input"
+              style={{ width: 300 }}
+              placeholder="Username"
+              type="text"
+              dir="auto"
+            />
+          </div>
         </div>
-        <div class="input-group_login">
-          <input
-            type="text"
-            class="form-control login"
-            placeholder="Password"
-            aria-label="Password"
-            aria-describedby="basic-addon1"
-          />
-        </div>
-
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <button type="button" class="btn_login btn-secondary">
+        <div className="pt-form-group pt-intent-danger">
+          <label className="pt-label" for="example-form-group-input-b">
+            Password
+            <span className="pt-text-muted">(required)</span>
+          </label>
+          <div className="pt-form-content">
+            <div className="pt-input-group pt-intent-danger">
+              <input
+                id="example-form-group-input-b"
+                className="pt-input"
+                style={{ width: 300 }}
+                type="password"
+                dir="auto"
+              />
+            </div>
+          </div>
+          <div className="pt-form-content" style={{ marginTop: 10 }}>
+            <button type="button" className="pt-button pt-intent-success">
               Login
+              <span className="pt-icon-standard pt-icon-arrow-right pt-align-right" />
             </button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn_login btn-secondary">
-              Signup
-            </button>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     );
   }
