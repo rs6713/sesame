@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import spawn from 'child_process'
+var spawn = require('child_process').spawn
 var PythonShell = require('python-shell');
 
 
