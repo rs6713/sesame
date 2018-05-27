@@ -1,50 +1,58 @@
-.centered{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.center_block, .bottom_nav{
-	background-color: #3a8bd7
+.center_block,
+.bottom_nav {
+  background-color: #3a8bd7;
 }
 
-.nav-link{
-	color:	white;
+.nav-link {
+  color: white;
 }
 
-.nav{
-	position:	fixed;
-	width:	100%;
-	bottom: 0;
+.nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #3a8bd7;
 }
 
-.btn-group_login{
-	width:	100%;
+.btn-group_login {
+  width: 100%;
 }
 
-.form-group, .input-group_login, .btn_login{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-	width: 50%;
+.form-group,
+.input-group_login,
+.btn_login {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
 }
 
-.input-group_login{
-	margin-bottom: 1em;	
+.input-group_login {
+  margin-bottom: 1em;
 }
 
-.btn_login{
-	height: 2.5em;
-	
-	border-width: 1px;
-    border-color: #6c757d;
-	margin-bottom: 1em;
+.btn_login {
+  height: 2.5em;
+
+  border-width: 1px;
+  border-color: #6c757d;
+  margin-bottom: 1em;
 }
 
-.disability_details{
-	margin-top: 1em;
+.disability_details {
+  margin-top: 1em;
 }
 
-.disability_label{
-	margin-left: 1em;
+.disability_label {
+  margin-left: 1em;
+}
+
+.pt-tab-list {
+  justify-content: center;
 }
