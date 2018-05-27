@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+import spawn from 'child_process'
+var PythonShell = require('python-shell');
+
+
+
 const LOADING = "loading";
 const RESULTS = "results";
 
@@ -18,6 +23,21 @@ class App extends Component {
     this.setState({ state: LOADING });
     reader.readAsText(e.target.files[0], "UTF-8");
     reader.onload = evt => {
+      console.log(evt)
+      //var spawn = require("child_process").spawn;
+
+      var pyshell = new PythonShell('./doc_read.py');
+      pyshell.on('message', function (message) {
+        // received a message sent from the Python script (a simple "print" statement)
+        console.log(message);
+      });
+
+      //var pythonProcess = spawn('python',["./doc_read.py"]);
+      //pythonProcess.stdout.on('data', function (data){
+      //  console.log(data)
+        // Do something with the data returned from python script
+      //});
+
       this.setState({ content: evt.target.result });
       setTimeout(() => {
         this.setState({ state: RESULTS });
