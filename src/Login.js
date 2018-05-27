@@ -34,6 +34,8 @@ class Login extends Component {
               />
             </div>
           </div>
+        </div>
+        <div className="pt-form-group">
           <div className="pt-form-content" style={{ marginTop: 10 }}>
             <button type="button" className="pt-button pt-intent-success">
               Login

@@ -18,17 +18,14 @@ ReactDOM.render(
       <Route exact={true} path="/" component={Home} />
       <Route exact={true} path="/insurance" component={App} />
       <Route path="/login" component={Login} />
-      <Route path="/signup" component={Signup} />
+      <Route path="/profile" component={Signup} />
       <div className="nav">
         <Tabs id="TabsExample" selectedTabId="rx">
           <li className="pt-tab" role="tab">
             <Link to="/">Home</Link>
           </li>
           <li className="pt-tab" role="tab">
-            <Link to="/signup">Signup</Link>
-          </li>
-          <li className="pt-tab" role="tab">
-            <Link to="/login">Login</Link>
+            <Link to="/profile">Profile</Link>
           </li>
         </Tabs>
       </div>

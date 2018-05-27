@@ -4,105 +4,99 @@ class Login extends Component {
   render() {
     return (
       <div className="App">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
+        <div className="pt-form-group">
+          <label className="pt-label" for="example-form-group-input-a">
+            Name
+          </label>
+          <div className="pt-form-content">
             <input
-              type="email"
-              class="form-control"
-              id="exampleInputName"
-              placeholder=""
+              id="example-form-group-input-a"
+              className="pt-input"
+              style={{ width: 300 }}
+              placeholder="Name"
+              type="text"
+              dir="auto"
             />
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Age</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputAge"
-              placeholder=""
-            />
+        </div>
+        <div className="pt-form-group">
+          <label className="pt-label" for="example-form-group-input-b">
+            Age
+          </label>
+          <div className="pt-form-content">
+            <div className="pt-input-group">
+              <input
+                id="example-form-group-input-b"
+                className="pt-input"
+                style={{ width: 300 }}
+                type="text"
+                placeholder="Age"
+                dir="auto"
+              />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Gender</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputAge"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Person to Contact</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputAge"
-              placeholder=""
-            />
-          </div>
+        </div>
 
-          <div class="form-group">
-            <label for="exampleInputPassword1">Disability</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputAge"
-              placeholder=""
-            />
-            <div class="row disability_details">
-              <div class="col-md-6">
-                <label for="exampleInputPassword1">Type</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputAge"
-                  placeholder=""
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="exampleInputPassword1">Severity</label>
-                <div class="row">
-                  <div class="input-group-text">
-                    <input
-                      type="radio"
-                      aria-label="Checkbox for following text input"
-                    />
-                  </div>
-                  <label class="disability_label" for="exampleInputPassword1">
-                    Mild
-                  </label>
-                </div>
-                <div class="row">
-                  <div class="input-group-text">
-                    <input
-                      type="radio"
-                      aria-label="Checkbox for following text input"
-                    />
-                  </div>
-                  <label class="disability_label" for="exampleInputPassword1">
-                    Moderate
-                  </label>
-                </div>
-                <div class="row">
-                  <div class="input-group-text">
-                    <input
-                      type="radio"
-                      aria-label="Checkbox for following text input"
-                    />
-                  </div>
-                  <label class="disability_label" for="exampleInputPassword1">
-                    Severe
-                  </label>
-                </div>
+        <div className="pt-form-group">
+          <label className="pt-label" for="example-form-group-input-b">
+            Disablilty
+          </label>
+          <div className="pt-form-content">
+            <div className="pt-input-group">
+              <div class="pt-select .modifier">
+                <select>
+                  <option selected>Choose an item...</option>
+                  <option value="1">Blind</option>
+                  <option value="2">Deaf</option>
+                  <option value="3">Autism</option>
+                  <option value="4">Intellectual Disability</option>
+                </select>
               </div>
             </div>
           </div>
+        </div>
 
-          <button type="submit" class="btn btn-default">
-            Submit
-          </button>
-        </form>
+        <div className="pt-form-group">
+          <label className="pt-label" for="example-form-group-input-b">
+            Severity
+          </label>
+          <div className="pt-form-content">
+            <div className="pt-input-group">
+              <div class="pt-select .modifier">
+                <select>
+                  <option selected>Choose an item...</option>
+                  <option value="1">Mild</option>
+                  <option value="2">Severe</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-form-group">
+          <label className="pt-label" for="example-form-group-input-b">
+            Gender
+          </label>
+          <div className="pt-form-content">
+            <div className="pt-input-group">
+              <div class="pt-select .modifier">
+                <select>
+                  <option selected>Choose an item...</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="pt-form-group">
+          <div className="pt-form-content">
+            <button type="button" className="pt-button pt-intent-success">
+              Save
+              <span className="pt-icon-standard pt-icon-arrow-right pt-align-right" />
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
