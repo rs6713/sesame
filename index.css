@@ -48,3 +48,8 @@
 .disability_label{
 	margin-left: 1em;
 }
+
+/* OVERRIDES */
+.container-fluid{
+	padding: 0 !important;
+}
