@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
 class Login extends Component {
+    
+  submit() {
+      
+  }
+    
   render() {
     return (
       <div className="App">
@@ -37,7 +42,7 @@ class Login extends Component {
         </div>
         <div className="pt-form-group">
           <div className="pt-form-content" style={{ marginTop: 10 }}>
-            <button type="button" className="pt-button pt-intent-success">
+            <button type="button" className="pt-button pt-intent-success" onSubmit={this.submit}>
               Login
               <span className="pt-icon-standard pt-icon-arrow-right pt-align-right" />
             </button>

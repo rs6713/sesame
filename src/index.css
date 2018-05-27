@@ -56,3 +56,19 @@
 .pt-tab-list {
   justify-content: center;
 }
+
+
+        ul.images{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            width: 900px;
+            overflow-x: auto;
+        }
+      
+        ul.images li {
+            flex: 0 0 auto;
+            width: 150px;
+            height: 150px;
+        } 
